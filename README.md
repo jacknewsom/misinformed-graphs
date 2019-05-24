@@ -29,3 +29,5 @@ You will be asked to input a few values, including
 * `timesteps`: number of timesteps in simulation
 * `persuasion_probability`: how likely a student is believe misinformation from a neighboring student
 * `corruption_probability`: how likely a student is to generate misinformation at a given timestep
+
+You can just press enter to use default values. The code will then generate and display a plot of the graph representing the class. After closing this plot, a second plot of the graph after the simulation is displayed.
