@@ -1,5 +1,5 @@
 import random
-from nodes import Instructor, Student
+from nodes import Node, Instructor, Student
 
 n_students = input("How many students? Press enter for default value, 50: ")
 if not n_students:
@@ -27,6 +27,23 @@ if not timesteps:
     timesteps = 20
 else:
     timesteps = int(timesteps)
+
+persuasion_probability = input("How likely to be persuaded? Press enter for default value, 0.4: ")
+if not persuasion_probability:
+    persuasion_probability = 0.4
+else:
+    persuasion_probability = float(persuasion_probability)
+
+Node.persuasion_probability = persuasion_probability
+
+corruption_probability = input("How likely to be corrupted? Press enter for default value, 0.01: ")
+if not corruption_probability:
+    corruption_probability = 0.01
+else:
+    corruption_probability = float(corruption_probability)
+
+Student.corruption_probability = corruption_probability
+
 
 prof = Instructor(0)
 students = [Student(i) for i in range(n_students)]
