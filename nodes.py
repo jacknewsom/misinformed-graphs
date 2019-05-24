@@ -2,14 +2,14 @@ from random import random
 
 class Node(object):
 	# likelihood of a node to accept misinformation from incident node
-	persuasion_factor = 0.4
+	persuasion_probability = 0.4
 
 	def __init__(self, belief=0):
 		self.belief = belief
 
 	def collect_beliefs(self):
 		# if node has neighbor with misinformation and random event occurs,
-		if -1 in [n.belief for n in self.neighbors] and random() <= Node.persuasion_factor:
+		if -1 in [n.belief for n in self.neighbors] and random() <= Node.persuasion_probability:
 			return -1
 		elif 1 in [n.belief for n in self.neighbors]:
 			return 1
