@@ -1,16 +1,32 @@
 import random
 from nodes import Instructor, Student
 
-n_students = 50
+n_students = input("How many students? Press enter for default value, 50: ")
+if not n_students:
+    n_students = 50
+else:
+    n_students = int(n_students)
 
 # number of instructor-student connections
-nisc = 5
+nisc = input("How many instructor-student connections? Press enter for default value, 5: ")
+if not nisc:
+    nisc = 5
+else:
+    nisc = int(nisc)
 
 # number of student-student connections
-nssc = 40
+nssc = input("How many student-student connections? Press enter for default value, 40: ")
+if not nssc:
+    nssc = 40
+else:
+    nssc = int(nssc)
 
 # number of simulation timesteps
-timesteps = 20
+timesteps = input("How many simulation timesteps? Press enter for default value, 20: ")
+if not timesteps:
+    timesteps = 20
+else:
+    timesteps = int(timesteps)
 
 prof = Instructor(0)
 students = [Student(i) for i in range(n_students)]
