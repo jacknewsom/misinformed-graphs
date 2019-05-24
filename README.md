@@ -1,9 +1,9 @@
 # misinformed-graphs
-A simple simulation of how misinformation might spread in a classroom. The simulation begins with an instructor with correct information they want to spread to the whole class. Only a few of the students in the class pay direct attention to the instructor the information is not spread out immediately.
+A simple simulation of how misinformation might spread in a classroom. The simulation begins with an instructor with correct information they want to spread to the whole class. Only a few of the students in the class pay direct attention to the instructor so the information is not spread out immediately.
 
-As the simulation progresses in time, students have a small probability of generating misinformation (perhaps they misread the email their professor sent out or confused themselves) which then may spread to other students. The rates at which misinformation is generated and is spread can be tweaked in the program.
+As the simulation progresses, students have a small probability of generating misinformation (perhaps they misread the email their professor sent out or confused themselves) which may spread to other students. The rates at which misinformation is generated and spread can be tweaked in the program.
 
-The simulation is straightforward in its implementation. Instructors and Students are represented as subclasses of the Node class. Each Node has some number of connections to other Nodes over which they spread information. The rates at which misinformation is generated and spread are class attributes that can be tweaked when the simulation is begun.
+The simulation represents Instructors and Students as vertices in an undirected graph. In the code, Instructors and Students are subclasses of the Node class. Each Node has some number of connections to other Nodes over which they spread information. The rates at which misinformation is generated and spread are class attributes that can be tweaked when the simulation is begun.
 
 Nodes drawn in red, blue, and green have correct, incorrect, and no information, respectively.
 
