@@ -16,9 +16,9 @@ installs all the required packages (the important ones are matplotlib and networ
 
 You will be asked to input a few values, including
 
-> * `n_students`: number of students in the class
-> * `nisc`: number of connections (edges) between students and the instructor
-> * `nssc`: number of connections (edges) between students
-> * `timesteps`: number of timesteps in simulation
-> * `persuasion_probability`: how likely a student is believe misinformation from a neighboring student
-> * `corruption_probability`: how likely a student is to generate misinformation at a given timestep
+* `n_students`: number of students in the class
+* `nisc`: number of connections (edges) between students and the instructor
+* `nssc`: number of connections (edges) between students
+* `timesteps`: number of timesteps in simulation
+* `persuasion_probability`: how likely a student is believe misinformation from a neighboring student
+* `corruption_probability`: how likely a student is to generate misinformation at a given timestep
