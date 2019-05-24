@@ -5,6 +5,8 @@ As the simulation progresses in time, students have a small probability of gener
 
 The simulation is straightforward in its implementation. Instructors and Students are represented as subclasses of the Node class. Each Node has some number of connections to other Nodes over which they spread information. The rates at which misinformation is generated and spread are class attributes that can be tweaked when the simulation is begun.
 
+Nodes drawn in red, blue, and green have correct, incorrect, and no information, respectively.
+
 Before Simulation            |  After Simulation
 :-------------------------:|:-------------------------:
 ![presimulation-sample](img/50_5_40_20_00-initial.png "Before Simulation")  |  ![postsimulation-example](img/50_5_40_20_00-evolve.png "After Simulation")
